@@ -1,7 +1,9 @@
+URL for the APIs are : https://ticket-management-service.onrender.com
+
 
 | Controller             | Endpoint                                | Method | Path/Query Params                    | Request Body                                                                                                 | Response                                       |
 |------------------------|-----------------------------------------|--------|--------------------------------------|--------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| **MovieController**    | `/movies`                               | POST   | -                                    | `{ "name": "Avengers", "duration": 180 }`                                                                    | Created `Movie` object                         |
+| **MovieController**    | `/movies`                               | POST   | -                                    | `{ "name": "Avengers", "description": "MCU assemble" }`                                                                    | Created `Movie` object                         |
 | **ShowtimeController** | `/showtimes`                            | POST   | -                                    | `{ "movie": { "id": 1 }, "screen": { "id": 1 }, "startTime": "2025-08-15T10:30:00", "availableSeats": 120 }` | Created `Showtime` object                      |
 |                        | `/showtimes/{id}/availability`          | GET    | Path: `id` (showtime ID)             | -                                                                                                            | Integer (available seats)                      |
 | **ScreenController**   | `/screens`                              | POST   | -                                    | `{ "name": "Audi 1", "seatingCapacity": 120, "price": 200 }`                                                 | Created `Screen` object                        |
