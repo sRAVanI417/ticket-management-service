@@ -3,13 +3,11 @@ package com.assignment.ticket_management_service.controller;
 import com.assignment.ticket_management_service.entity.Movie;
 import com.assignment.ticket_management_service.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/movies")
+@CrossOrigin
 public class MovieController {
 
     @Autowired

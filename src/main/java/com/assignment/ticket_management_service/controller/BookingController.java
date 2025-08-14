@@ -13,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/bookings")
+@CrossOrigin
 public class BookingController {
 
     @Autowired private BookingService bookingService;

@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/screens")
+@CrossOrigin
 public class ScreenController {
     ScreenService screenService;
 
